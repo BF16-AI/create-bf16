@@ -1,6 +1,6 @@
 {
   "name": "create-bf16",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scaffold a TypeScript, Vercel AI SDK, or Next.js starter app pre-wired to bf16.ai (uncensored 1M-context LLM API, Zero Data Retention).",
   "license": "MIT",
   "type": "module",

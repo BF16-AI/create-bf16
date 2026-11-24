@@ -20,13 +20,13 @@ npm create bf16 my-web-app -- --template=nextjs
 Want to run Claude Code, Codex, OpenCode, or Goose on bf16.ai right now?
 
 ```bash
-npx bf16 claude
+npx bf16ai claude
 ```
 
 ## Links
 
 - Website & API Keys: [https://bf16.ai](https://bf16.ai)
-- Official CLI: [`bf16`](https://www.npmjs.com/package/bf16)
+- Official CLI: [`bf16ai`](https://www.npmjs.com/package/bf16ai)
 - Vercel AI SDK Provider: [`bf16-ai-sdk-provider`](https://www.npmjs.com/package/bf16-ai-sdk-provider)
 - Official MCP Server: [`bf16-mcp-server`](https://www.npmjs.com/package/bf16-mcp-server)
 

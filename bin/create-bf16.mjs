@@ -2,6 +2,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { buildTemplateFiles, TEMPLATES } from '../src/templates.mjs';
 
 export function parseCreateArgs(argv) {
@@ -101,17 +102,22 @@ function main() {
     console.log('  npm install && npm run dev');
   }
   console.log('\nGet an API key ($0.20 starter credit): https://bf16.ai/dashboard/keys');
-  console.log('Or run coding agents right now: npx bf16 claude\n');
+  console.log('Or run coding agents right now: npx bf16ai claude\n');
 }
 
-const isDirectRun =
-  process.argv[1] &&
-  (process.argv[1].endsWith('/create-bf16.mjs') ||
-    process.argv[1].endsWith('\\create-bf16.mjs') ||
-    process.argv[1].endsWith('/create-bf16') ||
-    process.argv[1].endsWith('\\create-bf16'));
+function isDirectExecution() {
+  if (!process.argv[1]) return false;
+  try {
+    return (
+      fs.realpathSync(process.argv[1]) ===
+      fs.realpathSync(fileURLToPath(import.meta.url))
+    );
+  } catch {
+    return false;
+  }
+}
 
-if (isDirectRun) {
+if (isDirectExecution()) {
   try {
     main();
   } catch (err) {

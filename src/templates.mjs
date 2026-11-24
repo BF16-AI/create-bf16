@@ -7,7 +7,7 @@ export function buildTemplateFiles({ projectName, template = 'ai-sdk' }) {
     .replace(/^-+|-+$/g, '') || 'bf16-app';
 
   const envExample = `# Get an API key ($0.20 starter credit, Zero Data Retention): https://bf16.ai/dashboard/keys
-# Or run: npx bf16 login
+# Or run: npx bf16ai login
 BF16_API_KEY=sk-bf16-v1-...
 BF16_MODEL=deepseek/deepseek-v4.1-flash-uncensored-fast
 `;
@@ -344,7 +344,7 @@ TypeScript + Vercel AI SDK starter pre-wired to **[bf16.ai](https://bf16.ai)** (
 
 \`\`\`bash
 cp .env.example .env
-# Add your BF16_API_KEY from https://bf16.ai/dashboard/keys (or run: npx bf16 login)
+# Add your BF16_API_KEY from https://bf16.ai/dashboard/keys (or run: npx bf16ai login)
 npm install
 npm run dev
 \`\`\`
@@ -354,7 +354,7 @@ npm run dev
 Run Claude Code, Codex, or OpenCode directly against bf16.ai:
 
 \`\`\`bash
-npx bf16 claude
+npx bf16ai claude
 \`\`\`
 `,
   };
