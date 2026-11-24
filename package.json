@@ -1,0 +1,43 @@
+{
+  "name": "create-bf16",
+  "version": "0.1.0",
+  "description": "Scaffold a TypeScript, Vercel AI SDK, or Next.js starter app pre-wired to bf16.ai (uncensored 1M-context LLM API, Zero Data Retention).",
+  "license": "MIT",
+  "type": "module",
+  "author": "BF16 Team <hello@bf16.ai>",
+  "homepage": "https://bf16.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BF16-AI/create-bf16.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BF16-AI/create-bf16/issues"
+  },
+  "bin": {
+    "create-bf16": "bin/create-bf16.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "bf16",
+    "bf16.ai",
+    "create-bf16",
+    "ai-sdk",
+    "vercel-ai-sdk",
+    "llm",
+    "nextjs",
+    "starter",
+    "uncensored",
+    "1m-context"
+  ]
+}
